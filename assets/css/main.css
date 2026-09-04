@@ -770,6 +770,72 @@ html.dark-theme .contact .php-email-form {
   .footer .footer-top {
     padding-bottom: 28px;
   }
+
+  section,
+  .section {
+    padding: 44px 0;
+  }
+
+  .section-title {
+    padding-bottom: 36px;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .section-title p {
+    font-size: 15px;
+    padding: 0 8px;
+  }
+
+  .header .logo img {
+    height: 34px;
+    max-width: 168px;
+  }
+
+  .header .header-social-links {
+    padding-right: 8px;
+    gap: 4px;
+  }
+
+  .header .header-social-links a,
+  .header .header-social-links .theme-toggle {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .step-card {
+    padding: 26px 22px;
+  }
+
+  .info-card {
+    padding: 26px 22px;
+  }
+
+  .toolkit-card {
+    padding: 24px 20px;
+  }
+
+  .contact .info-wrap,
+  .contact .php-email-form {
+    padding: 24px 18px;
+  }
+
+  .contact-cta .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-cta .cta-actions .btn-accent {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .footer-title {
+    margin-top: 8px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -978,8 +1044,9 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 72% center;
   z-index: 1;
-  transform: scale(1.22);
+  transform: scale(1.18);
   transform-origin: center center;
 }
 
@@ -1157,6 +1224,24 @@ section,
   .page-hero .hero-tagline {
     font-size: 18px;
   }
+
+  /* on mobile, keep the portrait centred in the frame instead of cropping a corner */
+  .hero {
+    min-height: 72vh;
+    padding: 64px 0;
+  }
+
+  .hero img {
+    object-position: 62% 18%;
+    transform: scale(1.04);
+  }
+
+  .hero::before {
+    background-image:
+      radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(7, 30, 29, 0.68) 0%, rgba(7, 30, 29, 0.32) 42%, rgba(7, 30, 29, 0.86) 100%);
+    background-size: 24px 24px, cover;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1172,7 +1257,7 @@ section,
   background-color: #071e1d;
   background-image: url("../img/m-resume.jpg");
   background-size: cover;
-  background-position: center 28%;
+  background-position: 72% 28%;
   background-repeat: no-repeat;
 }
 
@@ -1287,7 +1372,32 @@ section,
 
 @media (max-width: 768px) {
   .page-hero {
-    padding: 74px 20px 62px;
+    padding: 74px 16px 62px;
+    min-height: 300px;
+    background-position: 62% 18%;
+  }
+
+  .page-hero::before {
+    background-image:
+      radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(7, 30, 29, 0.68) 0%, rgba(7, 30, 29, 0.32) 42%, rgba(7, 30, 29, 0.86) 100%);
+    background-size: 24px 24px, cover;
+  }
+
+  .page-hero .hero-tagline {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .page-hero .hero-eyebrow {
+    font-size: 11px;
+    padding: 6px 14px;
+    letter-spacing: 1.1px;
+  }
+
+  .page-hero .hero-breadcrumb {
+    font-size: 13px;
+    gap: 6px;
   }
 }
 
