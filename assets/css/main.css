@@ -1231,13 +1231,35 @@ section,
     font-size: 18px;
   }
 
-  /* on mobile: same scale as before, portrait centred */
+  /* home hero: same mobile photo treatment as inner pages */
+  .index-page .hero {
+    background-color: #071e1d;
+    background-image: url("../img/m-home-mobile.jpg?v=6");
+    background-size: cover;
+    background-position: center 22%;
+    background-repeat: no-repeat;
+  }
+
+  .index-page .hero .hero-bg,
+  .index-page .hero .hero-bg img {
+    display: none !important;
+  }
+
+  /* on mobile: same framing as inner pages */
   .hero img,
   .hero picture img {
     object-position: center 28%;
-    transform: scale(1.04);
+    transform: none;
     left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+  }
+
+  .index-page .hero .hero-tagline {
+    font-size: 15px;
+    line-height: 1.55;
+    padding: 6px 12px;
   }
 
   .hero::before {
