@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - Saqib Sharif</title>
+  <meta name="description" content="Case study of the Human Resource Management System built by Saqib Sharif with Laravel and MySQL.">
+  <meta name="keywords" content="Saqib Sharif, HRMS, Laravel, case study, REST API, MySQL">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('site-theme') === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+        }
+        localStorage.removeItem('site-theme-color');
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo.png?v=5" alt="Saqib">
+        <h1 class="sitename">Saqib</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">About Me</a></li>
+              <li class="dropdown"><a href="#"><span>My Work</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="portfolio.html">Laravel Apps</a></li>
+                  <li><a href="portfolio.html">REST APIs</a></li>
+                  <li><a href="portfolio.html">HRMS Work</a></li>
+                  <li><a href="services.html">Database Design</a></li>
+                  <li><a href="contact.html">Hire Me</a></li>
+                </ul>
+              </li>
+              <li><a href="resume.html">Experience</a></li>
+              <li><a href="services.html">Freelance</a></li>
+              <li><a href="contact.html">Get in Touch</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <button type="button" class="theme-toggle" aria-label="Toggle light and dark theme">
+          <i class="bi bi-moon icon-moon"></i>
+          <i class="bi bi-sun icon-sun"></i>
+        </button>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/saqib-shareef-77601839b/" target="_blank" rel="noopener" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="page-hero">
+      <div class="container text-center">
+        <span class="hero-eyebrow"><i class="bi bi-window-stack"></i> Case study</span>
+        <h2 class="hero-name">Project Details</h2>
+        <p class="hero-tagline">Human Resource Management System — Laravel backend, REST APIs, and MySQL at Solo Choicez</p>
+        <ul class="hero-breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="current">Project Details</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="case-panel">
+              <span class="project-tag">Inside the system</span>
+              <h3 class="mb-3">Modules I built</h3>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <ul class="module-list">
+                    <li><i class="bi bi-person-vcard"></i> Employee records</li>
+                    <li><i class="bi bi-clock-history"></i> Attendance tracking</li>
+                    <li><i class="bi bi-calendar-check"></i> Leave requests</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="module-list">
+                    <li><i class="bi bi-shield-lock"></i> Roles &amp; middleware</li>
+                    <li><i class="bi bi-hdd-network"></i> REST API layer</li>
+                    <li><i class="bi bi-speedometer2"></i> Reporting dashboard</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web Application / HR System</li>
+                <li><strong>Client</strong>: Solo Choicez (Pvt.) Ltd, Islamabad</li>
+                <li><strong>Stack</strong>: Laravel, MySQL, Bootstrap</li>
+                <li><strong>Role</strong>: PHP Laravel Developer</li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>An internal HR system built on Laravel and MySQL</h2>
+              <p>
+                A Human Resource Management System used internally to handle employee records, daily attendance, leave requests, and company policies in one place, replacing the spreadsheets the HR team had been maintaining by hand. I work on it as a PHP Laravel Developer, covering the database schema, the backend business logic, the REST API layer, and the interfaces built on top.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Project Overview</h2>
+        <p>The brief, the approach, and what came out of it</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-card">
+              <i class="bi bi-question-circle"></i>
+              <h4>The Brief</h4>
+              <p>HR was tracking employees, attendance, and leave across scattered spreadsheets. They needed one system where records were accurate, searchable, and visible only to the right people.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-card">
+              <i class="bi bi-lightbulb"></i>
+              <h4>The Approach</h4>
+              <p>I modelled the database first, then built each module as a Laravel controller with Form Request validation and an API endpoint, so the same logic serves both the web screens and future integrations.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-card">
+              <i class="bi bi-check-circle"></i>
+              <h4>The Outcome</h4>
+              <p>A system the HR team uses daily. Records live in one place, leave approvals leave an audit trail, and adding a new module now takes days rather than weeks.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Overview Section -->
+
+    <!-- What I Did Section -->
+    <section id="contribution" class="contribution section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What I Handled</h2>
+        <p>How the system came together, phase by phase</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-9">
+
+            <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="timeline-item">
+                <span class="timeline-date">Phase 01</span>
+                <h4>Requirements &amp; Scope</h4>
+                <p>Sat with the HR team to understand their existing process, then defined which modules were essential for the first release and which could wait.</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">Phase 02</span>
+                <h4>Data Model</h4>
+                <p>Designed the MySQL schema with migrations and Eloquent relationships covering employees, departments, attendance entries, leave types, and balances.</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">Phase 03</span>
+                <h4>Application Build</h4>
+                <p>Built the controllers, REST endpoints, and Blade interfaces module by module, with authentication, role based access, and middleware in place from the first draft.</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">Phase 04</span>
+                <h4>Optimisation &amp; Handover</h4>
+                <p>Profiled slow listing queries and fixed them with eager loading and indexes, tested the endpoints in Postman, and documented them for the rest of the team.</p>
+              </div>
+
+            </div>
+
+            <h4 class="mt-5 mb-3">Skills Applied</h4>
+            <div class="tech-stack">
+              <span class="tech-pill"><i class="bi bi-check2"></i> Laravel &amp; MVC</span>
+              <span class="tech-pill"><i class="bi bi-check2"></i> Eloquent ORM</span>
+              <span class="tech-pill"><i class="bi bi-check2"></i> MySQL Schema Design</span>
+              <span class="tech-pill"><i class="bi bi-check2"></i> RESTful APIs</span>
+              <span class="tech-pill"><i class="bi bi-check2"></i> Auth &amp; Middleware</span>
+              <span class="tech-pill"><i class="bi bi-check2"></i> Query Optimisation</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /What I Did Section -->
+
+    <!-- Related Work Section -->
+    <section id="related" class="portfolio section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>More Work</h2>
+        <p>Other projects from my portfolio</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <span class="project-icon"><i class="bi bi-people"></i></span>
+              <span class="project-tag">Web · Solo Choicez</span>
+              <h4>HRMS Employee Records</h4>
+              <p>Employee record management inside the company HRMS — profiles, departments, documents, and search across the whole workforce.</p>
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Blade</span>
+              </div>
+              <a href="portfolio.html" class="project-link">Back to portfolio <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <span class="project-icon"><i class="bi bi-hdd-network"></i></span>
+              <span class="project-tag">Backend · API</span>
+              <h4>REST API Integration</h4>
+              <p>JSON endpoints written in Laravel and consumed by web clients, tested in Postman and documented for the rest of the team.</p>
+              <div class="project-tech">
+                <span>REST</span>
+                <span>JSON</span>
+                <span>Postman</span>
+              </div>
+              <a href="portfolio.html" class="project-link">Back to portfolio <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <span class="project-icon"><i class="bi bi-window-desktop"></i></span>
+              <span class="project-tag">Web · Laravel</span>
+              <h4>Laravel Web Application</h4>
+              <p>Multi-module web app structured around the MVC pattern, with Blade views, Eloquent models, and reusable form components.</p>
+              <div class="project-tech">
+                <span>PHP</span>
+                <span>Laravel MVC</span>
+                <span>Eloquent</span>
+              </div>
+              <a href="portfolio.html" class="project-link">Back to portfolio <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Related Work Section -->
+
+    <!-- Call To Action Section -->
+    <section id="contact-cta" class="contact-cta section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="cta-box text-center">
+          <h2>Have a project like this?</h2>
+          <p>Whether it's an internal tool, an API, or a full Laravel application, tell me what you need and I'll walk you through how I'd approach it.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn-accent">Get in Touch</a>
+            <a href="portfolio.html" class="btn-accent btn-accent-outline">Back to Portfolio</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="row gy-4 footer-top">
+
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-brand">
+            <h3 class="sitename">Saqib Sharif</h3>
+            <p>PHP Laravel and full-stack web developer in Islamabad. Laravel backends, REST APIs, MySQL and PostgreSQL databases, and modern frontends with React and Tailwind.</p>
+            <div class="social-links d-flex">
+              <a href="https://github.com/saqibma960-prog" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/saqib-shareef-77601839b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=saqibma960@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+            <li><a href="resume.html"><i class="bi bi-chevron-right"></i> Resume</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li>
+            <li><a href="portfolio.html"><i class="bi bi-chevron-right"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h4 class="footer-title">What I Do</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i> Laravel Development</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i> REST API Design</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i> MySQL &amp; PostgreSQL</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i> React Interfaces</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i> Node.js Services</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i> Database Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h4 class="footer-title">Get in Touch</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="icon"><i class="bi bi-geo-alt"></i></span>
+              <div>
+                <strong>Address</strong>
+                <span>Islamabad, Pakistan</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon"><i class="bi bi-telephone"></i></span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+923359276370">+92 335 9276370</a>
+              </div>
+            </li>
+            <li>
+              <span class="icon"><i class="bi bi-whatsapp"></i></span>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/923135648788">+92 313 5648788</a>
+              </div>
+            </li>
+            <li>
+              <span class="icon"><i class="bi bi-envelope"></i></span>
+              <div>
+                <strong>Email</strong>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=saqibma960@gmail.com" target="_blank" rel="noopener">saqibma960@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <strong>Saqib Sharif</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

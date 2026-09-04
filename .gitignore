@@ -1,0 +1,6 @@
+.vscode/
+*.py
+_preview_*.html
+__pycache__/
+Thumbs.db
+Desktop.ini
